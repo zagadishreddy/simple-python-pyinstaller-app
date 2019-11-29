@@ -9,7 +9,7 @@ pipeline {
             }
             steps {
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-                sh 'zip -rp simple-python-pyinstaller-app.zip sources/*
+                sh 'zip -rp simple-python-pyinstaller-app.zip sources/*'
             }
         }
         stage('Test') {
